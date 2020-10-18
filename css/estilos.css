@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+:root {
+    --titulo: calc(5px + 5vw);
+    --amarillo: #fcc71d;
+    --negro: #120F0D;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+    color: white;
+}
+.hero {
+    background-image: url('../img/fondo.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+section {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5vw;
+}
+h1 {
+    font-size: var(--titulo);
+    color: var(--amarillo);
+    line-height: 1.2em;
+}
+.sociales {
+    display: flex;
+    margin: 1vw 0;
+}
+.sociales div {
+    text-align: center;
+    padding: 0.5vw;
+    background-color: var(--amarillo);
+    margin-right: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;  
+    cursor: pointer;
+}
+.sociales div a{
+    color: var(--negro);
+}
+.sociales div:hover {
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.woman{
+    max-width: 100%;
+}
+.logo {
+    width: 50%;
+}
+.texto {
+    margin:1vw 0;
+}
